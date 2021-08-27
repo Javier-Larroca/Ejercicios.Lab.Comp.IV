@@ -1,0 +1,40 @@
+package dominio;
+
+public class Articulo {
+
+	//Atributos
+	private int id;
+	private String nombre;
+	
+	//Constructor
+	public Articulo() {
+		id = 0;
+		nombre = "Sin nombre";
+	}
+	
+	public Articulo(String nombre, int id) {
+		this.id = id;
+		this.nombre = nombre;
+	}
+	
+	//Getters y setters
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Articulo ID= "  + id + ", NOMBRE= " + nombre;
+	}
+		
+	
+}

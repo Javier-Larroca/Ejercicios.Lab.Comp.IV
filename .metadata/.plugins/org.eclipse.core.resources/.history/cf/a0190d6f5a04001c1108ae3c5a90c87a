@@ -1,0 +1,52 @@
+package dominio;
+
+public class Articulo {
+
+	//Atributos
+	private int id;
+	private String nombre;
+	//Atributo statico
+	static int cont=0;
+	
+	//Metodo estatico
+	public static int devuelveProximoId() {
+		return cont+1;
+	}
+	
+	//Constructor
+	public Articulo() {
+		//Contador automatico para ID
+		cont ++;
+		this.id = cont;
+		this.nombre = "Sin nombre";
+	}
+	
+	public Articulo(String nombre) {
+		//Contador automatico para ID
+		cont ++;
+		this.id = cont;
+		this.nombre = nombre;
+	}
+	
+	//Getters y setters
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	//Metodo toString
+	@Override
+	public String toString() {
+		return "Articulo ID= "  + id + ", NOMBRE= " + nombre;
+	}
+		
+	
+}
