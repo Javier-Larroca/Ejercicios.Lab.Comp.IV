@@ -35,6 +35,4 @@ public class Producto {
 		return "Producto - Fecha Caducidad: "+ fechaCaducidad + ", numeroLote=" + numeroLote;
 	}
 	
-	
-
 }
