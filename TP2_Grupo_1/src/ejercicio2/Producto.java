@@ -1,8 +1,7 @@
 package ejercicio2;
-import java.util.Date;
 
 public class Producto {
-	private Date fechaCaducidad;
+	private String fechaCaducidad;
 	private int numeroLote;
 	
 	//Constructor
@@ -10,16 +9,16 @@ public class Producto {
 		
 	}
 	
-	public Producto(Date fechaCaducidad, int numeroLote) {
+	public Producto(String fechaCaducidad, int numeroLote) {
 		this.fechaCaducidad = fechaCaducidad;
 		this.numeroLote = numeroLote;
 	}
 	
 	//Getters y Setters
-	public Date getFechaCaducidad() {
+	public String getFechaCaducidad() {
 		return fechaCaducidad;
 	}
-	public void setFechaCaducidad(Date fechaCaducidad) {
+	public void setFechaCaducidad(String fechaCaducidad) {
 		this.fechaCaducidad = fechaCaducidad;
 	}
 	public int getNumeroLote() {

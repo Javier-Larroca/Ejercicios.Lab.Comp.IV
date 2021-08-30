@@ -1,7 +1,5 @@
 package ejercicio2;
 
-import java.util.Date;
-
 public class ProductosCongelados extends Producto {
 	
 	private int temperaturaCongelacionRecomendada;
@@ -11,7 +9,7 @@ public class ProductosCongelados extends Producto {
 		super();
 	}
 	
-	public ProductosCongelados(Date fechaCaducidad, int numeroLote, int temperaturaCongelacionRecomendada) {
+	public ProductosCongelados(String fechaCaducidad, int numeroLote, int temperaturaCongelacionRecomendada) {
 		super(fechaCaducidad, numeroLote);
 		this.temperaturaCongelacionRecomendada= temperaturaCongelacionRecomendada;
 	}

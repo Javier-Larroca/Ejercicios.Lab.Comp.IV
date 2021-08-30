@@ -1,6 +1,5 @@
 package ejercicio2;
 
-import java.util.Date;
 
 public class ProductosRefrigerados extends Producto{
 
@@ -11,7 +10,7 @@ public class ProductosRefrigerados extends Producto{
 		super();
 	}
 	
-	public ProductosRefrigerados(Date fechaCaducidad, int numeroLote, int codigoOrganismoSupervisionAlimentaria) {
+	public ProductosRefrigerados(String fechaCaducidad, int numeroLote, int codigoOrganismoSupervisionAlimentaria) {
 		super(fechaCaducidad, numeroLote);
 		this.codigoOrganismoSupervisionAlimentaria = codigoOrganismoSupervisionAlimentaria;
 	}
@@ -27,7 +26,7 @@ public class ProductosRefrigerados extends Producto{
 
 	@Override
 	public String toString() {
-		return "Productos Refrigerados -  Fecha Caducidad: "+ getFechaCaducidad() + ", numero de lote: " + getNumeroLote() 
+		return "Productos refrigerados -  Fecha Caducidad: "+ getFechaCaducidad() + ", numero de lote: " + getNumeroLote() 
 		+", codigo organismo de supervision alimentaria: " + codigoOrganismoSupervisionAlimentaria;
 	}
 	

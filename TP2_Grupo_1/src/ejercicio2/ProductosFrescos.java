@@ -1,9 +1,8 @@
 package ejercicio2;
-import java.util.Date;
 
 public class ProductosFrescos extends Producto {
 
-	private Date fechaEnvasado;
+	private String fechaEnvasado;
 	private String paisOrigen;
 
 	
@@ -12,17 +11,17 @@ public class ProductosFrescos extends Producto {
 		super();
 	}
 
-	public ProductosFrescos(Date fechaCaducidad, int numeroLote, Date fechaEnvasado, String paisOrigen) {
+	public ProductosFrescos(String fechaCaducidad, int numeroLote, String fechaEnvasado, String paisOrigen) {
 		super(fechaCaducidad, numeroLote);
 		this.fechaEnvasado= fechaEnvasado;
 		this.paisOrigen= paisOrigen;
 	}
 	
 	//Getters y setters
-	public Date getFechaEnvasado() {
+	public String getFechaEnvasado() {
 		return fechaEnvasado;
 	}
-	public void setFechaEnvasado(Date fechaEnvasado) {
+	public void setFechaEnvasado(String fechaEnvasado) {
 		this.fechaEnvasado = fechaEnvasado;
 	}
 	public String getPaisOrigen() {
