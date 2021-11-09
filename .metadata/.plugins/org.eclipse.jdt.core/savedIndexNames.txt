@@ -1,2 +1,7 @@
 INDEX VERSION 1.130+C:\Users\javie\Documents\UTN\Lab. de computacion IV\Ejercicios.Lab.Comp.IV\.metadata\.plugins\org.eclipse.jdt.core
 2248906309.index
+292246060.index
+2117168154.index
+928562101.index
+441450963.index
+1445993809.index
